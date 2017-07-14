@@ -37,9 +37,33 @@ namespace CardsLibrary
 			this.number = number;
 			this.shape = shape;
 			this.side = CardSideEnum.DOWN;
-			// Need to update (imageFace, imageBack)
-			this.imageFace = null;
-			this.imageBack = null;
+			this.imageFace = ImageCutter.GetFaceImage(this);
+			this.imageBack = ImageCutter.GetBackImage();
+		}
+
+		public CardShapeEnum Shape
+		{
+			get
+			{
+				return this.shape;
+			}
+		}
+
+		public CardNumEnum Number
+		{
+			get
+			{
+				return this.number;
+			}
+		}
+
+		public void OpenCard()
+		{
+			this.side = CardSideEnum.UP;
+		}
+		public void CloseCard()
+		{
+			this.side = CardSideEnum.DOWN;
 		}
     }
 }

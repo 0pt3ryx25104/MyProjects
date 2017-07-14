@@ -17,7 +17,16 @@ namespace CardsLibrary
 
 		public void AddAtHand(Card newCard)
 		{
-			this.cardList.Add(newCard);
+			try
+			{
+				if (this.cardList.Count >= 13)
+					throw new Exception("AddAtHand() Error. Exceeding hand limit");
+				this.cardList.Add(newCard);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+			}
 		}
 
 		public Card RemoveFromHand(int index)
