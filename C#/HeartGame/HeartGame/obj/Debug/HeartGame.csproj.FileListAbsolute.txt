@@ -2,6 +2,8 @@ C:\Users\JeongDo\Desktop\Visual Studio 2012 Professional Projects\C#\projects\He
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\bin\Debug\HeartGame.exe.config
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\bin\Debug\HeartGame.exe
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\bin\Debug\HeartGame.pdb
+C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\bin\Debug\CardsLibrary.dll
+C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\bin\Debug\CardsLibrary.pdb
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\obj\Debug\HeartGame.csprojResolveAssemblyReference.cache
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\obj\Debug\HeartGame.MainWin.resources
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\HeartGame\obj\Debug\HeartGame.Properties.Resources.resources

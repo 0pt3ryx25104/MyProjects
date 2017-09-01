@@ -13,15 +13,17 @@ namespace CardsLibrary
 		ACE, TWO, THIRD, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
 		JACK, QUEEN, KING
 	}
-
 	public enum CardShapeEnum
 	{
-		SPADE, HEART, DIAMOND, CLUB
+		SPADE, HEART, CLUB, DIAMOND
 	}
-
 	public enum CardSideEnum
 	{
 		UP, DOWN
+	}
+	public enum CardState
+	{
+		HAND, TABLE
 	}
 
     public class Card
@@ -31,6 +33,7 @@ namespace CardsLibrary
 		private Image imageFace;
 		private Image imageBack;
 		private CardSideEnum side;
+		private CardState state;
 
 		public Card(CardNumEnum number, CardShapeEnum shape)
 		{
@@ -39,6 +42,7 @@ namespace CardsLibrary
 			this.side = CardSideEnum.DOWN;
 			this.imageFace = ImageCutter.GetFaceImage(this);
 			this.imageBack = ImageCutter.GetBackImage();
+			this.state = CardState.HAND;
 		}
 
 		public CardShapeEnum Shape
@@ -57,6 +61,16 @@ namespace CardsLibrary
 			}
 		}
 
+		public CardSideEnum Side
+		{
+			get { return this.side; }
+		}
+
+		public CardState State
+		{
+			get { return this.state; }
+		}
+
 		public void OpenCard()
 		{
 			this.side = CardSideEnum.UP;
@@ -64,6 +78,11 @@ namespace CardsLibrary
 		public void CloseCard()
 		{
 			this.side = CardSideEnum.DOWN;
+		}
+		public void FromHandToTable()
+		{
+			if (this.state == CardState.HAND)
+				this.state = CardState.TABLE;
 		}
     }
 }

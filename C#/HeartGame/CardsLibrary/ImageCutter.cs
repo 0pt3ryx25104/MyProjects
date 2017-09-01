@@ -8,14 +8,14 @@ using System.Drawing;
 
 namespace CardsLibrary
 {
-	class ImageCutter
+	public class ImageCutter
 	{
 		private static System.Resources.ResourceManager resourceManager =
-			new System.Resources.ResourceManager("HeartGame.Images", System.Reflection.Assembly.GetExecutingAssembly());
+			new System.Resources.ResourceManager("CardsLibrary.Resources", System.Reflection.Assembly.GetExecutingAssembly());
 
 		public static Bitmap GetFaceImage(Card card)
 		{
-			Bitmap cardImages = (Bitmap)resourceManager.GetObject("card-front.png");
+			Bitmap cardImages = (Bitmap)resourceManager.GetObject("card_front");
 
 			int topx = 0;
 			int topy = 0;
@@ -35,7 +35,7 @@ namespace CardsLibrary
 
 		public static Bitmap GetBackImage()
 		{
-			Bitmap cardBack = (Bitmap)resourceManager.GetObject("card-back.jpg");
+			Bitmap cardBack = (Bitmap)resourceManager.GetObject("card_back");
 
 			return cardBack;
 		}

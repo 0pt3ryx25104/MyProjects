@@ -1,7 +1,7 @@
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\bin\Debug\CardsLibrary.dll
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\bin\Debug\CardsLibrary.pdb
-C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.csprojResolveAssemblyReference.cache
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.Resources.resources
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.csproj.GenerateResource.Cache
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.dll
 C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.pdb
+C:\Users\JeongDo\Desktop\PortableGit\MyProjects\C#\HeartGame\CardsLibrary\obj\Debug\CardsLibrary.csprojResolveAssemblyReference.cache

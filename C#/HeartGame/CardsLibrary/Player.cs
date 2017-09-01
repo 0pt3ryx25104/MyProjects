@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CardsLibrary
 {
-	class Player
+	public class Player
 	{
 		private String name;
-		private uint score;
+		private int score;
 		private Hand playerHand;
 
 		public Player(String name)
@@ -26,7 +26,7 @@ namespace CardsLibrary
 			}
 		}
 
-		public uint Score
+		public int Score
 		{
 			get
 			{
@@ -38,9 +38,11 @@ namespace CardsLibrary
 			}
 		}
 
-		public void AddScore(uint val)
+		public void AddScore(int val)
 		{
 			this.score += val;
+			if (this.score < 0)
+				this.score = 0;
 		}
 
 		public Hand PlayerHand

@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -76,6 +80,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardsLibrary\CardsLibrary.csproj">
+      <Project>{bef97b62-0723-4905-af7e-aad59eb2dc62}</Project>
+      <Name>CardsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
